@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?> 
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?> 
+ 
+     <AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller = "control.AddTagController" prefHeight="240.0" prefWidth="250.0">
+         <children>
+            <Button layoutX="70.0" layoutY="175.0" mnemonicParsing="false" text="Accept" onAction="#acceptAdd" />
+            <Button fx:id="declineButton" layoutX="150.0" layoutY="175.0" mnemonicParsing="false" text="Decline" onAction = "#decline" />
+            <Text layoutX="25.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select the Type and Value for the New Tag" />
+            <ComboBox layoutX="70.0" layoutY="75.0" prefWidth="150.0" fx:id="typeBox"/>
+            <Text layoutX="25.0" layoutY="90.0" text="Type:" />
+            <Text layoutX="24.0" layoutY="140.0" text="Value:" />
+            <TextField layoutX="70.0" layoutY="125.0" fx:id="valueField" />
+         </children>
+      </AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.DisplayController" prefHeight="500.0" prefWidth="600.0">
+   <children>
+      <ImageView fx:id="image" fitHeight="300.0" fitWidth="350.0" layoutX="14.0" layoutY="87.0" pickOnBounds="true" preserveRatio="false" />
+      <ListView fx:id="tagList" layoutX="386.0" layoutY="87.0" prefHeight="300.0" prefWidth="200.0" />
+      <Text layoutX="475.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tags" />
+      <TextField fx:id="caption" layoutX="120.0" layoutY="42.0" />
+      <Text layoutX="54.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caption:" />
+      <Button onAction="#decline" layoutX="460.0" layoutY="450.0" mnemonicParsing="false" text="Back" />
+      <Text layoutX="70.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:" />
+      <TextField fx:id="date" layoutX="120.0" layoutY="405.0" />
+      <Button onAction="#previousPhoto" layoutX="70.0" layoutY="450.0" text="Previous" />
+      <Button onAction="#nextPhoto" layoutX="170.0" layoutY="450.0" text="Next" />
+   </children>
+</AnchorPane>
+

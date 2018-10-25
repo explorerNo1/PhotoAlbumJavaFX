@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+      <AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.CaptionController" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button onAction="#acceptCaption" layoutX="27.0" layoutY="123.0" mnemonicParsing="false" text="Accept" />
+            <Button onAction="#decline" layoutX="117.0" layoutY="123.0" mnemonicParsing="false" text="Decline" />
+            <Text layoutX="53.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter new caption" />
+            <TextField fx:id="captionField" layoutX="26.0" layoutY="75.0" />
+         </children>
+      </AnchorPane>
